@@ -58,3 +58,5 @@ Thumbs.db
 # Backups antigos
 _backup_*/
 _backup_*
+*.rar
+*.zip
