@@ -54,3 +54,7 @@ Thumbs.db
 # ZIPs e backups
 *.zip
 *.tar.gz
+
+# Backups antigos
+_backup_*/
+_backup_*
