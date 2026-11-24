@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+
+    <!-- PERMISSÕES -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- PERMISSOES: SERVICO EM 2o PLANO + BOOT -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name=".SantosDumontApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SantosDumont"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31" 
+        android:hardwareAccelerated="true"
+        android:largeHeap="true">
+
+        <!-- TELA DE CARREGAMENTO (PRIMEIRA A ABRIR) -->
+        <activity
+            android:name=".activities.LoadingActivity"
+            android:exported="true"
+            android:theme="@style/Theme.SantosDumont">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- TELA DE BOAS-VINDAS (LOGIN) -->
+        <activity
+            android:name=".activities.BoasVindasActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- TELA PRINCIPAL (HOME) -->
+        
+
+        <!-- TELAS DO APP -->
+        <activity android:name=".activities.ShellActivity" android:exported="false" />
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <!-- TELA CHEIA DE ALARME (SOBRE A TELA DE BLOQUEIO) -->
+        <activity
+            android:name=".activities.AlarmeTelaActivity"
+            android:exported="false"
+            android:showOnLockScreen="true"
+            android:turnScreenOn="true"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:theme="@style/Theme.SantosDumont" />
+
+        <!-- RECEIVER DE NOTIFICAÇÕES -->
+        <receiver
+            android:name=".utils.NotificationReceiver"
+            android:exported="false" />
+
+    
+        <activity
+            android:name=".activities.LembreteActivity"
+            android:exported="false"
+            android:showOnLockScreen="true"
+            android:turnScreenOn="true"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:theme="@style/Theme.SantosDumont" />
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.santosdumont.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+            <activity
+            android:name=".activities.ImageViewActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SantosDumont" />
+
+        <activity
+            android:name=".activities.TutorialActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+    
+        <activity
+            android:name=".activities.ChangelogActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+    
+        <activity
+            android:name=".activities.BloqueioActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+    
+        <receiver
+            android:name=".utils.AulaVagaReceiver"
+            android:exported="false" />
+    
+        <activity
+            android:name=".activities.DialogPresencaActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.AppCompat.DayNight.Dialog.Alert" />
+    
+        <activity
+            android:name=".activities.DevMenuActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+    
+        <activity
+            android:name=".activities.TurnoActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- SERVICO EM 2o PLANO (aulas) -->
+        <service
+            android:name=".utils.AulaForegroundService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="specialUse">
+            <property
+                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="Mantem o app ativo durante as aulas" />
+        </service>
+
+        <!-- RECEIVER: alarmes do AulaScheduler -->
+        <receiver
+            android:name=".utils.AulaAlarmReceiver"
+            android:exported="false" />
+
+        <!-- RECEIVER: reagenda apos boot -->
+        <receiver
+            android:name=".utils.BootReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:maxHeight="600dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome do trabalho"
+            android:textColor="#AAB5B2"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/edtNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_input"
+            android:padding="12dp"
+            android:inputType="text"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAB5B2"
+            android:autofillHints="none"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data"
+            android:textColor="#AAB5B2"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/edtData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_input"
+            android:padding="12dp"
+            android:hint="Toque para escolher"
+            android:inputType="none"
+            android:focusable="false"
+            android:clickable="true"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAB5B2"
+            android:autofillHints="none"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hora"
+            android:textColor="#AAB5B2"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/edtHora"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_input"
+            android:padding="12dp"
+            android:hint="Toque para escolher"
+            android:inputType="none"
+            android:focusable="false"
+            android:clickable="true"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAB5B2"
+            android:autofillHints="none"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Descricao"
+            android:textColor="#AAB5B2"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/edtDescricao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_input"
+            android:padding="12dp"
+            android:minLines="3"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAB5B2"
+            android:autofillHints="none"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Imagem do conteudo"
+            android:textColor="#AAB5B2"
+            android:textSize="12sp"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <Button
+                android:id="@+id/btnCamera"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/bg_button"
+                android:text="Camera"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnGaleria"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:background="@drawable/bg_button"
+                android:text="Galeria"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivPreview"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/bg_input"
+            android:visibility="gone"
+            android:contentDescription="Imagem do trabalho"
+            android:layout_marginBottom="12dp" />
+
+        <CheckBox
+            android:id="@+id/cbAlarme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Programar alarme no app Relogio"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="4dp" />
+
+        <CheckBox
+            android:id="@+id/cbDiaSimDiaNao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Notificacoes dia sim/dia nao"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="4dp" />
+
+        <CheckBox
+            android:id="@+id/cbUltimaSemana"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Notificacoes na ultima semana"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="4dp" />
+
+        <CheckBox
+            android:id="@+id/cbPosAlarme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Continuar notificando (3 dias)"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnExcluir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button"
+            android:text="EXCLUIR"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

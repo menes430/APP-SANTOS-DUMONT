@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark">
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollHome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        android:paddingBottom="110dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/txtGreeting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Olá,"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/txtNomeAluno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Seu Nome"
+                        android:textColor="@color/text_primary"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/txtTurma"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1º A • Matutino"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <FrameLayout
+                    android:id="@+id/btnPerfil"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:background="@drawable/bg_profile">
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_person"
+                        android:tint="@color/text_primary"
+                        android:contentDescription="Perfil" />
+                </FrameLayout>
+            </LinearLayout>
+            <Space android:layout_width="match_parent" android:layout_height="22dp" />
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardProximaAula"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/card_blue"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="0dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="190dp"
+                    android:orientation="vertical"
+                    android:padding="22dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Próxima aula"
+                            android:textColor="#FFFFFF"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/txtHorarioAula"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="08:00"
+                            android:textColor="#FFFFFF"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/txtMateriaProxima"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:text="Matemática"
+                        android:textColor="#FFFFFF"
+                        android:textSize="27sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/txtProfessorProxima"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Prof. João"
+                        android:textColor="#DDE7FF"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/txtSalaProxima"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="Sala 05"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <Space android:layout_width="match_parent" android:layout_height="14dp" />
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardFrequencia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/card_green"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="0dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="165dp"
+                    android:orientation="vertical"
+                    android:padding="22dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Frequência"
+                        android:textColor="#FFFFFF"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/txtFrequencia"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="92%"
+                            android:textColor="#FFFFFF"
+                            android:textSize="42sp"
+                            android:textStyle="bold" />
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="18dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Sua presença está ótima!"
+                                android:textColor="#FFFFFF"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:text="Continue mantendo sua frequência."
+                                android:textColor="#DFF5E7"
+                                android:textSize="13sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:text="Acesso rápido"
+                android:textColor="@color/text_primary"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:columnCount="2"
+                android:rowCount="3">
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardCardapio"
+                    android:layout_width="0dp"
+                    android:layout_height="170dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    app:cardBackgroundColor="@color/card_orange"
+                    app:cardCornerRadius="28dp"
+                    app:cardElevation="0dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="18dp">
+                        <ImageView android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_food" android:tint="#FFFFFF" android:contentDescription="Cardápio" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="Cardápio" android:textColor="#FFFFFF" android:textSize="18sp" android:textStyle="bold" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Veja a refeição" android:textColor="#FFF0DD" android:textSize="12sp" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardHorarios"
+                    android:layout_width="0dp"
+                    android:layout_height="170dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    app:cardBackgroundColor="@color/card_purple"
+                    app:cardCornerRadius="28dp"
+                    app:cardElevation="0dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="18dp">
+                        <ImageView android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_clock" android:tint="#FFFFFF" android:contentDescription="Horários" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="Horários" android:textColor="#FFFFFF" android:textSize="18sp" android:textStyle="bold" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Confira suas aulas" android:textColor="#E8DFFF" android:textSize="12sp" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardTrabalhos"
+                    android:layout_width="0dp"
+                    android:layout_height="170dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    app:cardBackgroundColor="@color/card_blue"
+                    app:cardCornerRadius="28dp"
+                    app:cardElevation="0dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="18dp">
+                        <ImageView android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_book" android:tint="#FFFFFF" android:contentDescription="Trabalhos" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="Trabalhos" android:textColor="#FFFFFF" android:textSize="18sp" android:textStyle="bold" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Não esqueça" android:textColor="#DDE7FF" android:textSize="12sp" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardCalendario"
+                    android:layout_width="0dp"
+                    android:layout_height="170dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    app:cardBackgroundColor="@color/card_teal"
+                    app:cardCornerRadius="28dp"
+                    app:cardElevation="0dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="18dp">
+                        <ImageView android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_event" android:tint="#FFFFFF" android:contentDescription="Horários" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="Horários" android:textColor="#FFFFFF" android:textSize="18sp" android:textStyle="bold" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Eventos e provas" android:textColor="#D8F5F0" android:textSize="12sp" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardProfessores"
+                    android:layout_width="0dp"
+                    android:layout_height="170dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    app:cardBackgroundColor="@color/card_dark"
+                    app:cardCornerRadius="28dp"
+                    app:cardElevation="0dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="18dp">
+                        <ImageView android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_person" android:tint="#FFFFFF" android:contentDescription="Professores" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="Professores" android:textColor="#FFFFFF" android:textSize="18sp" android:textStyle="bold" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Veja seus professores" android:textColor="#BFC5C7" android:textSize="12sp" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardInstagram"
+                    android:layout_width="0dp"
+                    android:layout_height="170dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    app:cardBackgroundColor="@color/card_pink"
+                    app:cardCornerRadius="28dp"
+                    app:cardElevation="0dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="18dp">
+                        <ImageView android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_instagram" android:tint="#FFFFFF" android:contentDescription="Instagram" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="Instagram" android:textColor="#FFFFFF" android:textSize="18sp" android:textStyle="bold" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Acompanhe a escola" android:textColor="#FFE0EB" android:textSize="12sp" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+                            <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardNotas"
+                    android:layout_width="0dp"
+                    android:layout_height="170dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    app:cardBackgroundColor="@color/card_purple"
+                    app:cardCornerRadius="28dp"
+                    app:cardElevation="0dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="18dp">
+                        <ImageView android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_book" android:tint="#FFFFFF" android:contentDescription="Notas" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="Notas" android:textColor="#FFFFFF" android:textSize="18sp" android:textStyle="bold" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Suas médias" android:textColor="#E8DFFF" android:textSize="12sp" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </GridLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="18dp"
+        app:cardBackgroundColor="@color/navigation_dark"
+        app:cardCornerRadius="38dp"
+        app:cardElevation="12dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:orientation="horizontal">
+            <LinearLayout android:id="@+id/navTrabalhos" android:layout_width="0dp" android:layout_height="60dp" android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+                <ImageView android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/ic_book" android:tint="#FFFFFF" android:contentDescription="Trabalhos" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Trabalhos" android:textColor="#FFFFFF" android:textSize="11sp" />
+            </LinearLayout>
+            <LinearLayout android:id="@+id/navHorarios" android:layout_width="0dp" android:layout_height="60dp" android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+                <ImageView android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/ic_clock" android:tint="#FFFFFF" android:contentDescription="Horários" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Horários" android:textColor="#FFFFFF" android:textSize="11sp" />
+            </LinearLayout>
+            <LinearLayout android:id="@+id/navInicio" android:layout_width="0dp" android:layout_height="60dp" android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+                <ImageView android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/ic_home" android:tint="#FFFFFF" android:contentDescription="Início" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Início" android:textColor="#FFFFFF" android:textSize="11sp" />
+            </LinearLayout>
+            <LinearLayout android:id="@+id/navCardapio" android:layout_width="0dp" android:layout_height="60dp" android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+                <ImageView android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/ic_food" android:tint="#FFFFFF" android:contentDescription="Cardápio" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cardápio" android:textColor="#FFFFFF" android:textSize="11sp" />
+            </LinearLayout>
+            <LinearLayout android:id="@+id/navProfessores" android:layout_width="0dp" android:layout_height="60dp" android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+                <ImageView android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/ic_person" android:tint="#FFFFFF" android:contentDescription="Professores" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Professores" android:textColor="#FFFFFF" android:textSize="11sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

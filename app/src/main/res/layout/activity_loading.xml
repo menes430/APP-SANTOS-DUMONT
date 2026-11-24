@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/background_dark"
+    android:padding="24dp">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_plane"
+        app:tint="@color/primary"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="Logo Santos Dumont" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Santos Dumont"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_primary" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="APP ESCOLAR"
+        android:textSize="14sp"
+        android:textColor="@color/text_secondary"
+        android:layout_marginBottom="32dp" />
+
+    <ProgressBar
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:indeterminateTint="@color/primary"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:id="@+id/tv_funcao_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Turmas carregadas"
+        android:textColor="@color/text_primary"
+        android:alpha="0"
+        android:layout_marginBottom="6dp" />
+
+    <TextView
+        android:id="@+id/tv_funcao_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Merenda carregada"
+        android:textColor="@color/text_primary"
+        android:alpha="0"
+        android:layout_marginBottom="6dp" />
+
+    <TextView
+        android:id="@+id/tv_funcao_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Horários carregados"
+        android:textColor="@color/text_primary"
+        android:alpha="0"
+        android:layout_marginBottom="6dp" />
+
+    <TextView
+        android:id="@+id/tv_funcao_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Professores carregados"
+        android:textColor="@color/text_primary"
+        android:alpha="0"
+        android:layout_marginBottom="6dp" />
+
+    <TextView
+        android:id="@+id/tv_funcao_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notificações prontas"
+        android:textColor="@color/text_primary"
+        android:alpha="0" />
+</LinearLayout>

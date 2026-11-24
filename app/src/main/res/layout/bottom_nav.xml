@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottomNavigation"
+    android:layout_width="match_parent"
+    android:layout_height="76dp"
+    android:layout_gravity="bottom"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginBottom="18dp"
+    app:cardBackgroundColor="#A6121716"
+    app:cardCornerRadius="38dp"
+    app:cardElevation="12dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:rippleColor="#33FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:id="@+id/navTrabalhos"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="20dp"
+                    android:layout_height="20dp"
+                android:src="@drawable/ic_book"
+                app:tint="#FFFFFF"
+                android:contentDescription="@string/str_trabalhos" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_trabalhos"
+                android:textColor="#FFFFFF"
+                android:textSize="9sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/navHorarios"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="20dp"
+                    android:layout_height="20dp"
+                android:src="@drawable/ic_clock"
+                app:tint="#FFFFFF"
+                android:contentDescription="@string/str_hor_rios" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_hor_rios"
+                android:textColor="#FFFFFF"
+                android:textSize="9sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/navInicio"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="20dp"
+                    android:layout_height="20dp"
+                android:src="@drawable/ic_home"
+                app:tint="#FFFFFF"
+                android:contentDescription="@string/str_in_cio" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_in_cio"
+                android:textColor="#FFFFFF"
+                android:textSize="9sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/navCardapio"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="20dp"
+                    android:layout_height="20dp"
+                android:src="@drawable/ic_food"
+                app:tint="#FFFFFF"
+                android:contentDescription="@string/str_card_pio" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_card_pio"
+                android:textColor="#FFFFFF"
+                android:textSize="9sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/navProfessores"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="20dp"
+                    android:layout_height="20dp"
+                android:src="@drawable/ic_person"
+                app:tint="#FFFFFF"
+                android:contentDescription="@string/str_professores" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_professores"
+                android:textColor="#FFFFFF"
+                android:textSize="9sp" />
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Telas 720x1600 (Small Width 360dp) -->
+    <dimen name="padding_bottom_nav">96dp</dimen>
+</resources>

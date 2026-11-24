@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="360dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="24dp"
+    app:cardElevation="0dp"
+    app:cardBackgroundColor="#111417">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#111417">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- PREVIEW -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aparência"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cor atual"
+            android:textColor="#AAAAAA"
+            android:textSize="12sp"
+            android:layout_marginBottom="8dp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardPreview"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:id="@+id/llPreview">
+
+                <TextView
+                    android:id="@+id/txtPreviewTitulo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Título de exemplo"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txtPreviewSecundario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Texto secundário do card"
+                    android:textSize="13sp"
+                    android:layout_marginTop="6dp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+<!-- QUADRADO HSV + BRILHO -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Escolher cor"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="#1A1A1A"
+            android:layout_marginTop="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <com.santosdumont.utils.ColorSquareView
+                    android:id="@+id/squareColor"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <com.santosdumont.utils.BrightnessBarView
+                    android:id="@+id/barBrightness"
+                    android:layout_width="44dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="12dp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- CAMPOS NUMERICOS -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginEnd="6dp">
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Matiz (H)" android:textColor="#AAAAAA" android:textSize="11sp" />
+                <EditText android:id="@+id/edtH" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="number" android:textColor="#FFFFFF" android:textSize="13sp" android:background="#222831" android:padding="8dp" />
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Saturação (S)" android:textColor="#AAAAAA" android:textSize="11sp" android:layout_marginTop="6dp" />
+                <EditText android:id="@+id/edtS" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="number" android:textColor="#FFFFFF" android:textSize="13sp" android:background="#222831" android:padding="8dp" />
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Brilho (B)" android:textColor="#AAAAAA" android:textSize="11sp" android:layout_marginTop="6dp" />
+                <EditText android:id="@+id/edtB" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="number" android:textColor="#FFFFFF" android:textSize="13sp" android:background="#222831" android:padding="8dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="6dp">
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Vermelho (R)" android:textColor="#AAAAAA" android:textSize="11sp" />
+                <EditText android:id="@+id/edtR" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="number" android:textColor="#FFFFFF" android:textSize="13sp" android:background="#222831" android:padding="8dp" />
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Verde (G)" android:textColor="#AAAAAA" android:textSize="11sp" android:layout_marginTop="6dp" />
+                <EditText android:id="@+id/edtG" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="number" android:textColor="#FFFFFF" android:textSize="13sp" android:background="#222831" android:padding="8dp" />
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Azul (B)" android:textColor="#AAAAAA" android:textSize="11sp" android:layout_marginTop="6dp" />
+                <EditText android:id="@+id/edtAzul" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="number" android:textColor="#FFFFFF" android:textSize="13sp" android:background="#222831" android:padding="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- COR ATUAL -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cor atual"
+            android:textColor="#AAAAAA"
+            android:textSize="12sp"
+            android:layout_marginTop="16dp" />
+
+        <View
+            android:id="@+id/viewCorAtual"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="6dp" />
+
+        <!-- CHECKBOXES DO TEMA -->
+
+        <!-- FONTE -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fonte do app"
+            android:textColor="#AAAAAA"
+            android:textSize="12sp"
+            android:layout_marginTop="12dp" />
+
+        <Spinner
+            android:id="@+id/spFonte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp" />
+
+        <CheckBox
+            android:id="@+id/cbCorMorta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cor morta"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:gravity="end">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCancelarTema"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CANCELAR"
+                android:textColor="#0D99FF" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnOkTema"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OK"
+                android:textColor="#0D99FF" />
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+</com.google.android.material.card.MaterialCardView>

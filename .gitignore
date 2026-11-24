@@ -1,0 +1,56 @@
+# Android
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+bin/
+gen/
+out/
+release/
+.gradle/
+build/
+app/build/
+app/release/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Keystore e senhas
+keystore.properties
+*.jks
+*.keystore
+*.p12
+*.pfx
+
+# Firebase
+google-services.json
+
+# Local
+local.properties
+
+# Backups e diagnósticos
+app/_bak_devmenu/
+app/_diagnostico/
+*.bak
+*.bak_*
+diagnostico_*.txt
+inspecao_*.txt
+verificacao_*.txt
+
+# Dados de uso
+dados_uso*.txt
+logcat.txt
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# SO
+.DS_Store
+Thumbs.db
+
+# ZIPs e backups
+*.zip
+*.tar.gz

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp">
+
+    <!-- ICONE: halo translucido por fora, circulo azul por dentro -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="188dp"
+        android:layout_height="188dp"
+        app:cardBackgroundColor="#1FFFFFFF"
+        app:cardCornerRadius="94dp"
+        app:cardElevation="0dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="152dp"
+            android:layout_height="152dp"
+            android:layout_gravity="center"
+            app:cardBackgroundColor="@color/card_blue"
+            app:cardCornerRadius="76dp"
+            app:cardElevation="0dp">
+
+            <ImageView
+                android:id="@+id/imgIconeTutorial"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_gravity="center"
+                android:importantForAccessibility="no"
+                android:src="@drawable/ic_home"
+                app:tint="#FFFFFF" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/txtTituloTutorial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:text="Bem-vindo!"
+        android:textAlignment="center"
+        android:textColor="@color/text_primary"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <!-- tracinho de destaque -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="36dp"
+        android:layout_height="4dp"
+        android:layout_marginTop="12dp"
+        app:cardBackgroundColor="@color/primary"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="0dp" />
+
+    <TextView
+        android:id="@+id/txtDescTutorial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:gravity="center"
+        android:lineSpacingExtra="4dp"
+        android:text="Ao app da Escola Santos Dumont"
+        android:textAlignment="center"
+        android:textColor="@color/text_secondary"
+        android:textSize="16sp" />
+
+</LinearLayout>

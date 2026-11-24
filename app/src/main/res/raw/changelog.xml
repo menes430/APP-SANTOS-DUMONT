@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<changelog>
+    <versao numero="2.0.0" data="18.10.26" tipo="MAJOR">
+        <descricao>A grande atualizacao visual e de experiencia do Santos Dumont</descricao>
+        <novidades>
+            <item>Nova Barra de Navegacao flutuante (estilo Samsung Health)</item>
+            <item>Menu de Perfil deslizante (vem da direita)</item>
+            <item>Calendario com navegacao por setas e grade de meses/anos 4x3</item>
+            <item>Edicao completa de Trabalhos com miniatura de imagem</item>
+            <item>Suporte a 3 fontes de texto (Roboto, Poppins, Inter)</item>
+            <item>Opcao de Fundo Literal (cor pura do tema)</item>
+            <item>Notificacao de "Volta a Aula" agora com 3 minutos e popup colorido</item>
+            <item>Contador de dias e barra de status integrada</item>
+        </novidades>
+        <melhorias>
+            <item>Animacoes de tela agora vem da esquerda suavemente</item>
+            <item>Spinners de selecao de dia (Horarios e Professores) transparentes</item>
+            <item>Nomes completos das materias (ex: Matematica em vez de MAT)</item>
+            <item>Destaques de sabado e domingo na cor do tema</item>
+            <item>Layout do "Ola, Nome" mais espacado e flutuante</item>
+            <item>Cardapio com barra de semanas arredondada</item>
+            <item>Indicadores do Tutorial (3 quadrados) com ciclo corrigido</item>
+            <item>Barra inferior sobe junto com a navBar do Android</item>
+            <item>Changelog sai para o Tutorial automaticamente</item>
+            <item>Card de proxima aula com fim de semana corrigido</item>
+        </melhorias>
+        <correcoes>
+            <item>Bug do botao "Voltar ao Turno" que fechava o app</item>
+            <item>Barra de progresso da Proxima Aula agora funciona</item>
+            <item>Aula de segunda nao aparece mais em sabados e domingos</item>
+            <item>Cardapio agora atualiza sozinho com o passar das semanas</item>
+            <item>Texto invisivel nos horarios dos professores em temas claros</item>
+            <item>Tutorial antigo removido e substituido por fluxo continuo</item>
+            <item>Layouts de "Novo Trabalho" e edicoes polidos</item>
+            <item>Removida barra preta desnecessaria nos Horarios</item>
+        </correcoes>
+    </versao>
+
+
+    <versao numero="1.0.0" data="05.10.26" tipo="MAJOR">
+        <descricao>Versao inicial do app</descricao>
+        <novidades>
+            <item>Login (Nome + Turma)</item>
+            <item>Home com acesso rapido</item>
+            <item>Trabalhos, Horarios, Cardapio</item>
+            <item>Professores, Notas, Calendario</item>
+            <item>Instagram, Alarmes, Frequencia</item>
+        </novidades>
+        <melhorias />
+        <correcoes />
+    </versao>
+
+    <versao numero="9.7.8" data="08.10.26" tipo="MAJOR">
+        <descricao>Grande atualizacao com tutorial, changelog e sistema de presenca</descricao>
+        <novidades>
+            <item>Tutorial interativo de boas-vindas</item>
+            <item>Changelog (o que ha de novo)</item>
+            <item>Sistema de presenca (pergunta ao abrir o app)</item>
+            <item>Bloqueio educativo (5 minutos fora)</item>
+            <item>Botao Aula Vaga (+1 hora)</item>
+            <item>Notificacao de aviso (fim da aula vaga)</item>
+            <item>Modo Desenvolvedor (ativado com Tavin1945)</item>
+            <item>Painel Dev com 9 botoes de teste</item>
+        </novidades>
+        <melhorias>
+            <item>Card Proxima Aula alterna aula e merenda com animacao</item>
+            <item>Frequencia mostra [ ? ] antes da 1a marcacao</item>
+            <item>Botoes P e F com cores mais visiveis</item>
+            <item>Cardapio com semana automatica</item>
+            <item>Menu 3 pontinhos no Cardapio</item>
+            <item>Arrastar e soltar nos cards de acesso rapido</item>
+            <item>Barra de progresso no card Proxima Aula</item>
+        </melhorias>
+        <correcoes>
+            <item>Activity do Instagram quebrada</item>
+            <item>Activity do Calendario quebrada</item>
+            <item>Activity dos Alarmes quebrada</item>
+            <item>Arquivos .bak poluindo layout/</item>
+            <item>Acentos do app corrompidos</item>
+            <item>Frequencia nao calculava</item>
+            <item>Horarios das aulas desatualizados</item>
+            <item>Metodo irParaShellComPresenca duplicado</item>
+        </correcoes>
+    </versao>
+
+    <versao numero="16.1.0" data="09.10.26" tipo="MAJOR">
+        <descricao>Servico em segundo plano durante as aulas, envio diario pro Firebase e reorganizacao do Modo Desenvolvedor</descricao>
+        <novidades>
+            <item>Servico em segundo plano durante as aulas (7h-9h40, 10h10-11h50, 13h-15h30, 15h50-17h30)</item>
+            <item>Agendamento automatico de aulas (AulaScheduler)</item>
+            <item>Reagendamento automatico apos reiniciar o celular (BootReceiver)</item>
+            <item>Envio diario pro Firebase as 23:59 (substitui o envio de 6h)</item>
+            <item>Notificacao persistente "Aulas em andamento"</item>
+            <item>Pedido de permissao de notificacao movido para a Home</item>
+            <item>Modo Desenvolvedor reorganizado por categorias (Testes, Presenca, Telas, Dados, Debug)</item>
+            <item>Botao "Testar TODAS as notificacoes" no Modo Dev</item>
+        </novidades>
+        <melhorias>
+            <item>Barra inferior 15% mais translucida</item>
+            <item>Cores dos professores mais saturadas nos Horarios</item>
+            <item>Cards de Horarios mais arredondados (24dp)</item>
+            <item>Cardapio: sexta-feira nao fica mais encoberta pela barra</item>
+        </melhorias>
+        <correcoes>
+            <item>8 acentos corrompidos no DataHelper.java</item>
+            <item>Falso positivo de acentos em strings.xml e layouts</item>
+            <item>Sexta-feira encoberta pela barra no Cardapio</item>
+            <item>Permissao de notificacao pedida na tela errada</item>
+        </correcoes>
+    </versao>
+
+    <versao numero="17.0.0" data="10.10.26" tipo="MAJOR">
+        <descricao>Botao voltar, popup de confirmacao, bloqueio de nome e Modo Desenvolvedor em pastas expansiveis</descricao>
+        <novidades>
+            <item>Botao "Voltar ao turno" na tela de nome/sala</item>
+            <item>Popup de resumo (Turno/Sala/Nome) antes de confirmar</item>
+            <item>Bloqueio direto de nome duplicado (sem "E voce mesmo?")</item>
+            <item>Backup imediato no login (previne colisao as 23:59)</item>
+            <item>Modo Desenvolvedor reorganizado em 5 pastas expansiveis (Telas, Notificacoes, Firebase, Dados, Config)</item>
+        </novidades>
+        <melhorias>
+            <item>Terça-feira VES agora aparece em todas as 9 turmas (correcao de chave)</item>
+            <item>Setinha nas pastas do Modo Dev (▼ aberto / ▶ fechado)</item>
+        </melhorias>
+        <correcoes>
+            <item>Terça-feira VES vazia (chave "Terca" -> "Terça" em 9 turmas)</item>
+            <item>TerÃ§a mojibake em NotasFragment</item>
+            <item>"PDV" duplicado na lista de notas (era "Projeto de Vida" 2x)</item>
+            <item>BOM UTF-8 em NotasFragment</item>
+            <item>Arquivo DataHelper.java zerado durante edicao (recuperado)</item>
+            <item>Chave }); orfa em BoasVindasActivity</item>
+        </correcoes>
+    </versao>
+
+    <versao numero="2.1.0" data="2026-10-26">
+        <descricao>Fechamento da 2.1.0 — sessao de 26/10</descricao>
+        <novidades>
+            <item>Editor de cor novo (quadrado HSV + brilho 100%)</item>
+            <item>Carrossel nos Horarios e Professores (com rollback)</item>
+            <item>Login (Boas Vindas) redesenhado com animacao suave</item>
+            <item>Loading com textos aparecendo um por um</item>
+            <item>Modo automatico de tema (claro/escuro pelo tom)</item>
+            <item>Editar perfil mostra so as salas do turno atual</item>
+            <item>Frequencia com cor do tema no calendario</item>
+            <item>"Cardapio" renomeado para "Merenda"</item>
+            <item>Saida de Segunda de 1A adicionada</item>
+            <item>Contraste da barra de horarios corrigido (fundo 100% opaco)</item>
+            <item>"Cor vivida" no editor (substituiu "Fundo literal")</item>
+        </novidades>
+        <melhorias>
+            <item>Login mais limpo (menos textos, mais respiro)</item>
+            <item>Barra de horarios sem degradê lateral</item>
+            <item>Controle de tema com slider de brilho</item>
+            <item>Fonte do app (Roboto / Poppins / Inter) no editor</item>
+        </melhorias>
+        <correcoes>
+            <item>Loop do TextWatcher no editor de cor</item>
+            <item>Volta pra aula nao aparece quando o aluno disse que nao foi</item>
+            <item>Crash do HomeFragment apos destruir a view</item>
+            <item>Avião do Loading removido</item>
+            <item>Firestore PERMISSION_DENIED (regra publicada)</item>
+        </correcoes>
+    </versao>
+
+    <versao numero="2.2.0" data="2026-11-06" tipo="MAJOR">
+        <descricao>Fechamento da 2.2.0 - sessao de 06/11</descricao>
+        <novidades>
+            <item>Dialog de confirmacao de login customizado (estilo Samsung Health)</item>
+            <item>Lapis de edicao nos cards de Horarios</item>
+            <item>Cards de Professores usam a cor da primeira disciplina</item>
+            <item>Avisos de Frequencia e Merenda redesenhados, bloqueio unificado em 10s</item>
+            <item>Novo Trabalho refeito com Material (TextInputLayout, MaterialButton, MaterialCheckBox)</item>
+        </novidades>
+        <melhorias>
+            <item>Merenda: 1a corrigido para 1o nas abas e no card</item>
+            <item>TrabalhosFragment infla o dialog uma unica vez (elimina lag de ~500ms)</item>
+            <item>Barra de horarios com fundo 100% opaco e contraste 0.6</item>
+        </melhorias>
+        <correcoes>
+            <item>Tela branca em Horarios e Professores (adapter limpo no onDestroyView)</item>
+            <item>Fallback de recreate no onResume se o adapter sumir</item>
+        </correcoes>
+    </versao>
+
+    <versao numero="1.0 BETA" data="2026-11-21" tipo="MAJOR">
+        <descricao>Chegada da 1.0 BETA VERSION, com tutorial novo e ajustes no envio de dados</descricao>
+        <novidades>
+            <item>Tutorial refeito: uma pagina para cada funcao do app</item>
+            <item>Versao 1.0 BETA VERSION</item>
+        </novidades>
+        <melhorias>
+            <item>Tutorial com visual novo: botoes arredondados, icone com destaque e indicadores que se ajustam ao numero de paginas</item>
+            <item>Novo Trabalho com icones novos de foto, camera, calendario e relogio</item>
+        </melhorias>
+        <correcoes>
+            <item>Editar Perfil agora atualiza o mesmo registro que o envio de dados usa</item>
+            <item>Envio de dados grava o hash do aparelho no campo device_id (e nao o ID real)</item>
+        </correcoes>
+    </versao>
+
+</changelog>

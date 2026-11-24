@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_dark"
+    android:padding="16dp">
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar_trabalhos"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/background_dark"
+        app:title="Trabalhos"
+        app:titleTextColor="@color/text_primary"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:navigationIconTint="@color/text_primary" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Novo Trabalho"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_primary"
+        android:padding="8dp"
+        android:layout_marginTop="12dp" />
+    <EditText
+        android:id="@+id/edt_nome_trabalho"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_txt_editor"
+        android:padding="16dp"
+        android:hint="Nome do trabalho"
+        android:textColor="@color/text_primary"
+        android:textColorHint="@color/text_secondary"
+        android:textSize="18sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data de entrega"
+        android:textSize="14sp"
+        android:textColor="@color/text_secondary"
+        android:padding="8dp"
+        android:layout_marginTop="12dp" />
+    <EditText
+        android:id="@+id/edt_data_trabalho"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_txt_editor"
+        android:padding="16dp"
+        android:hint="DD/MM/AAAA"
+        android:inputType="date"
+        android:textColor="@color/text_primary"
+        android:textColorHint="@color/text_secondary"
+        android:textSize="18sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Matéria"
+        android:textSize="14sp"
+        android:textColor="@color/text_secondary"
+        android:padding="8dp"
+        android:layout_marginTop="12dp" />
+    <EditText
+        android:id="@+id/edt_materia_trabalho"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_txt_editor"
+        android:padding="16dp"
+        android:hint="Ex: Matemática"
+        android:textColor="@color/text_primary"
+        android:textColorHint="@color/text_secondary"
+        android:textSize="18sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="O que precisa fazer?"
+        android:textSize="14sp"
+        android:textColor="@color/text_secondary"
+        android:padding="8dp"
+        android:layout_marginTop="12dp" />
+    <EditText
+        android:id="@+id/edt_conteudo_trabalho"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:background="@drawable/bg_txt_editor"
+        android:padding="16dp"
+        android:hint="Digite aqui..."
+        android:textColor="@color/text_primary"
+        android:textColorHint="@color/text_secondary"
+        android:textSize="18sp" />
+    <Button
+        android:id="@+id/btn_salvar_trabalho"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_button"
+        android:text="Salvar Trabalho"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

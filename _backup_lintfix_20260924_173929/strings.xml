@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Santos Dumont</string>
+    <string name="app_version">09.22.26 V9.9</string>
+    <string name="voltar">Voltar</string>
+    <string name="continuar">Continuar</string>
+    <string name="salvar">Salvar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="entendi">ENTENDI</string>
+    <string name="fechar">Fechar</string>
+    <string name="mapa">Mapa</string>
+    <string name="editar_perfil">Editar Perfil</string>
+    <string name="instagram">Instagram</string>
+
+    <!-- HOME -->
+    <string name="str_ol__">Ola,</string>
+    <string name="str_seu_nome">Seu Nome</string>
+    <string name="str_1__a___matutino">1A Matutino</string>
+    <string name="str_pr_xima_aula">Proxima aula</string>
+    <string name="str_agora">Agora</string>
+    <string name="str_08_00">08:00</string>
+    <string name="str_matem_tica">Matematica</string>
+    <string name="str_prof__jo_o">Prof. Joao</string>
+    <string name="str_sala_05">Sala 05</string>
+    <string name="str_frequ_ncia">Frequencia</string>
+    <string name="str_92_">92%</string>
+    <string name="str_sua_presen_a_est___tima_">Sua presenca esta otima!</string>
+    <string name="str_continue_mantendo_sua_frequ_ncia_">Continue mantendo sua frequencia.</string>
+    <string name="str_acesso_r_pido">Acesso rapido</string>
+    <string name="str_card_pio">Cardapio</string>
+    <string name="str_veja_a_refei__o">Veja a refeicao</string>
+    <string name="str_hor_rios">Horarios</string>
+    <string name="str_confira_suas_aulas">Confira suas aulas</string>
+    <string name="str_trabalhos">Trabalhos</string>
+    <string name="str_n_o_esque_a">Nao esqueca</string>
+    <string name="str_eventos_e_provas">Eventos e provas</string>
+    <string name="str_professores">Professores</string>
+    <string name="str_veja_seus_professores">Veja seus professores</string>
+    <string name="str_instagram">Instagram</string>
+    <string name="str_acompanhe_a_escola">Acompanhe a escola</string>
+    <string name="str_notas">Notas</string>
+    <string name="str_suas_m_dias">Suas medias</string>
+    <string name="str_in_cio">Inicio</string>
+
+    <!-- LOGIN -->
+    <string name="str_santos_dumont">Santos Dumont</string>
+    <string name="str_app_escolar">APP ESCOLAR</string>
+    <string name="str_selecione_sua_turma">Selecione sua turma</string>
+    <string name="str_digite_seu_nome">Digite seu nome</string>
+    <string name="str_seu_nome_completo">Seu nome completo</string>
+
+    <!-- LOADING -->
+    <string name="str___turmas_carregadas_">Turmas carregadas</string>
+    <string name="str___card_pio_carregado_">Cardapio carregado</string>
+    <string name="str___hor_rios_carregados_">Horarios carregados</string>
+    <string name="str___professores_carregados_">Professores carregados</string>
+    <string name="str___notifica__es_prontas_">Notificacoes prontas</string>
+
+    <!-- CALENDARIO -->
+    <string name="str_set_">SET.</string>
+    <string name="str_d">D</string>
+    <string name="str_s">S</string>
+    <string name="str_t">T</string>
+    <string name="str_q">Q</string>
+    <string name="str_1_ter_">1 TER.</string>
+
+    <!-- CARDAPIO -->
+    <string name="str_1_">1a</string>
+    <string name="str_2_">2a</string>
+    <string name="str_3_">3a</string>
+    <string name="str_4_">4a</string>
+    <string name="str_segunda">Segunda</string>
+    <string name="str_1__semana">1a Semana</string>
+    <string name="str_cuscuz">CUSCUZ</string>
+    <string name="str_kcal">Kcal</string>
+    <string name="str_prot_">Prot.</string>
+    <string name="str_lip_">Lip.</string>
+    <string name="str_carb_">Carb.</string>
+    <string name="str_s_dio">Sodio</string>
+    <string name="str_230">230</string>
+    <string name="str_9">9</string>
+    <string name="str_6">6</string>
+    <string name="str_34">34</string>
+    <string name="str_148">148</string>
+
+    <!-- HORARIOS -->
+    <string name="str_selecione_o_dia">Selecione o dia</string>
+    <string name="str_7h">7h</string>
+    <string name="str_art">ART</string>
+    <string name="str_prof__c_cera">Prof. Cícera</string>
+    <string name="v94_editar">Editar</string>
+    <string name="v94_resetar">Resetar</string>
+    <string name="v94_sem_aula">Sem aula</string>
+    <string name="v94_texto_livre">Texto livre (sem professor)</string>
+    <string name="v94_materia">Materia</string>
+    <string name="v94_professor">Professor</string>
+    <string name="v94_salvar">Salvar</string>
+    <string name="v94_cancelar">Cancelar</string>
+    <string name="v94_resetar_titulo">Resetar aula?</string>
+    <string name="v94_resetar_msg">Voltar ao padrao?</string>
+    <string name="v94_aula_atualizada">Aula atualizada</string>
+    <string name="v94_aula_resetada">Aula resetada</string>
+
+    <!-- NOTAS -->
+    <string name="str_minhas_notas">Minhas Notas</string>
+    <string name="str____maior_nota">Maior nota</string>
+    <string name="str____pior_nota">Pior nota</string>
+    <string name="str_notas_por_mat_ria">Notas por materia</string>
+    <string name="str_9_6">9,6</string>
+    <string name="str_4_5">4,5</string>
+    <string name="str_hist_ria">Historia</string>
+    <string name="str_soma____">Soma: --</string>
+    <string name="str_m_dia____">Media: --</string>
+
+    <!-- PROFESSORES -->
+    <string name="str_professor">Professor</string>
+    <string name="str_matem_tica__pdv">Matematica, PDV</string>
+    <string name="str_5_turmas">5 turmas</string>
+    <string name="str_disciplinas__mat__pdv">Disciplinas: MAT, PDV</string>
+    <string name="str_hor_rios_">Horarios:</string>
+
+    <!-- TRABALHOS -->
+    <string name="str_novo_trabalho">Novo Trabalho</string>
+    <string name="str_meus_trabalhos">Meus Trabalhos</string>
+    <string name="str_nome_do_trabalho__t_tulo_do_alarme_">Nome do trabalho</string>
+    <string name="str_data__dd_mm_aa_">Data (DD/MM/AA)</string>
+    <string name="str_data__dd_mm_aaaa_">Data (DD/MM/AAAA)</string>
+    <string name="str_hora__hh_mm_">Hora (HH:MM)</string>
+    <string name="str_descri__o_do_trabalho">Descricao do trabalho</string>
+    <string name="str_imagem_do_conte_do__opcional_">Imagem do conteudo (opcional)</string>
+    <string name="str____salvar_trabalho">Salvar Trabalho</string>
+
+    <!-- V9 TRABALHOS -->
+    <string name="v9_novo_trabalho">Novo Trabalho</string>
+    <string name="v9_meus_trabalhos">Meus Trabalhos</string>
+    <string name="v9_nome_hint">Nome do trabalho</string>
+    <string name="v9_data_hint">Data (DD/MM/AA)</string>
+    <string name="v9_hora_hint">Hora (HH:MM)</string>
+    <string name="v9_descricao_hint">Descricao do trabalho</string>
+    <string name="v9_imagem_label">Imagem do conteudo (opcional)</string>
+    <string name="v9_camera">Camera</string>
+    <string name="v9_galeria">Galeria</string>
+    <string name="v9_salvar_trabalho">Salvar Trabalho</string>
+    <string name="v9_cancelar">Cancelar</string>
+    <string name="v9_programar_alarme">Programar alarme no app Relogio</string>
+    <string name="v9_notif_dia_sim_nao">Notificacoes dia sim/dia nao</string>
+    <string name="v9_notif_ultima_semana">Notificacoes na ultima semana</string>
+    <string name="v9_notif_pos_alarme">Continuar notificando depois do alarme (3 dias)</string>
+    <string name="v9_permitir_alarme_titulo">Permitir alarmes exatos?</string>
+    <string name="v9_permitir_alarme_msg">Para programar o alarme, o app precisa de permissao.</string>
+    <string name="v9_permitir">Permitir</string>
+    <string name="v9_negar">Agora nao</string>
+    <string name="v9_alarme_negado_titulo">Alarme nao programado</string>
+    <string name="v9_alarme_negado_msg">O trabalho foi salvo, mas o alarme NAO foi programado.</string>
+    <string name="v9_entendi">Entendi</string>
+    <string name="v9_salvo_ok">Trabalho salvo com sucesso!</string>
+    <string name="v9_erro_campos">Preencha nome, data e hora!</string>
+    <string name="v9_erro_data">Data/hora no passado!</string>
+    <string name="v9_alarme_agendado">Alarme programado no app Relogio!</string>
+    <string name="v9_trabalho_ausente">Sem trabalhos cadastrados</string>
+    <string name="v9_nenhum_trabalho">Nenhum trabalho cadastrado ainda. Toque no + para adicionar.</string>
+    <string name="v9_btn_adicionar">Adicionar trabalho</string>
+    <string name="v9_permissao_camera">Permissao necessaria</string>
+    <string name="v9_permissao_camera_msg">O app precisa da camera para tirar foto.</string>
+    <string name="v9_abrir_config">Abrir configuracoes</string>
+
+    <!-- ALARMES -->
+    <string name="str_alarmes_e_lembretes">Alarmes e Lembretes</string>
+    <string name="str_t_tulo__ex__estudar_matem_tica_">Titulo (ex: Estudar Matematica)</string>
+    <string name="str_salvar_alarme">Salvar Alarme</string>
+    <string name="str_meus_alarmes">Meus Alarmes</string>
+
+    <!-- LEMBRETE -->
+    <string name="str_trabalho">Trabalho</string>
+    <string name="str_faltam_x_dias">Faltam X dias</string>
+
+    <!-- INSTAGRAM -->
+    <string name="str____siga_a_escola_">Siga a escola!</string>
+
+    <!-- MAPA -->
+    <string name="str_____mapa_em_constru__o">Mapa em construcao</string>
+    <string name="str_envie_a_imagem_ou_descreva_as_salas_da_escola_para_eu_montar_o_mapa_aqui_">Envie a imagem ou descreva as salas da escola.</string>
+
+    <!-- LOG -->
+    <string name="v95_log_salvo">Log salvo em Documentos/SantosDumont/Logs</string>
+    <string name="v95_erro_log">Erro salvo no log</string>
+    <string name="str_aulas_encerradas">Aulas encerradas</string>
+    <string name="str_bom_descanso">Bom descanso!</string>
+    <string name="str_sem_aulas_hoje">Sem aulas hoje</string>
+    <string name="str_proxima">Proxima aula</string>
+    <string name="appbar_scrolling_view_behavior" translatable="false">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
+</resources>

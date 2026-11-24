@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_dark"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtTituloFrequencia"
+        android:text="Frequencia"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:id="@+id/tvMesFrequencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="OUTUBRO 2026"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#0D99FF"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginBottom="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="8dp">
+
+        <TextView android:text="D" android:textColor="@color/text_primary" android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textSize="14sp" android:textStyle="bold" />
+        <TextView android:text="S" android:textColor="#FFFFFF" android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textSize="14sp" android:textStyle="bold" />
+        <TextView android:text="T" android:textColor="#FFFFFF" android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textSize="14sp" android:textStyle="bold" />
+        <TextView android:text="Q" android:textColor="#FFFFFF" android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textSize="14sp" android:textStyle="bold" />
+        <TextView android:text="Q" android:textColor="#FFFFFF" android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textSize="14sp" android:textStyle="bold" />
+        <TextView android:text="S" android:textColor="#FFFFFF" android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textSize="14sp" android:textStyle="bold" />
+        <TextView android:text="S" android:textColor="@color/text_primary" android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textSize="14sp" android:textStyle="bold" />
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/gridFrequencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="7"
+        android:rowCount="6"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/tvTituloDiaFreq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:text="Selecione um dia"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingBottom="110dp">
+
+        <LinearLayout
+            android:id="@+id/llAulasDia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

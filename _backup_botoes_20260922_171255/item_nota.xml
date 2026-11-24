@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="@color/card_dark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvMateriaNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Matemática"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <EditText
+                android:id="@+id/edtBi1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/bg_input"
+                android:padding="8dp"
+                android:hint="1º"
+                android:inputType="numberDecimal"
+                android:digits="0123456789."
+                android:maxLength="4"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#AAB5B2"
+                android:gravity="center" />
+
+            <EditText
+                android:id="@+id/edtBi2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/bg_input"
+                android:padding="8dp"
+                android:hint="2º"
+                android:inputType="numberDecimal"
+                android:digits="0123456789."
+                android:maxLength="4"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#AAB5B2"
+                android:gravity="center" />
+
+            <EditText
+                android:id="@+id/edtBi3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/bg_input"
+                android:padding="8dp"
+                android:hint="3º"
+                android:inputType="numberDecimal"
+                android:digits="0123456789."
+                android:maxLength="4"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#AAB5B2"
+                android:gravity="center" />
+
+            <EditText
+                android:id="@+id/edtBi4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_input"
+                android:padding="8dp"
+                android:hint="4º"
+                android:inputType="numberDecimal"
+                android:digits="0123456789."
+                android:maxLength="4"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#AAB5B2"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvSomaMateria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Soma: --"
+            android:textColor="#AAB5B2"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvMediaMateria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Média: --"
+            android:textColor="#0D99FF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

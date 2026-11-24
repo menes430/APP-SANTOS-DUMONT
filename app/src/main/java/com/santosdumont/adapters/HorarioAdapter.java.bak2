@@ -1,0 +1,103 @@
+package com.santosdumont.adapters;
+
+import android.graphics.Color;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.santosdumont.R;
+import com.santosdumont.models.Aula;
+import com.santosdumont.utils.DataHelper;
+
+import java.util.List;
+
+public class HorarioAdapter extends RecyclerView.Adapter<HorarioAdapter.HorarioViewHolder> {
+
+    public interface OnAulaClick {
+        void onClick(Aula aula, int posicao);
+    }
+
+    private final List<Aula> aulas;
+    private final OnAulaClick listener;
+    private final com.santosdumont.utils.ColorTheme theme;
+
+    public HorarioAdapter(List<Aula> aulas, OnAulaClick listener) {
+        this.aulas = aulas;
+        this.listener = listener;
+        this.theme = null;
+    }
+
+    public HorarioAdapter(List<Aula> aulas, com.santosdumont.utils.ColorTheme theme, OnAulaClick listener) {
+        this.aulas = aulas;
+        this.listener = listener;
+        this.theme = theme;
+    }
+
+    @NonNull
+    @Override
+    public HorarioViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View v = LayoutInflater.from(parent.getContext())
+                .inflate(R.layout.item_horario, parent, false);
+        return new HorarioViewHolder(v);
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull HorarioViewHolder h, int position) {
+        Aula a = aulas.get(position);
+        boolean useTema = (theme != null);
+        int corPrimaria  = useTema ? theme.getPrimary()       : Color.parseColor("#0D99FF");
+        int corTexto     = useTema ? theme.getTextPrimary()   : Color.WHITE;
+        int corTextoSec  = useTema ? theme.getTextSecondary() : Color.parseColor("#888888");
+        int corNeutro    = useTema ? theme.getNeutral()       : Color.parseColor("#666666");
+
+        if (a.isSemAula()) {
+            h.tvHorario.setText(a.getHorario());
+            h.tvHorario.setTextColor(corTextoSec);
+            h.tvDisciplina.setText("Sem aula");
+            h.tvDisciplina.setTextColor(corTextoSec);
+            h.tvProfessor.setText("");
+            ((com.google.android.material.card.MaterialCardView) h.itemView).setCardBackgroundColor(corNeutro);
+        } else {
+            h.tvHorario.setText(a.getHorario());
+            h.tvHorario.setTextColor(corPrimaria);
+            h.tvDisciplina.setText(a.getDisciplina());
+            h.tvDisciplina.setTextColor(corTexto);
+            if (a.isTextoLivre()) {
+                h.tvProfessor.setText("");
+            } else {
+                h.tvProfessor.setText(a.getProfessor());
+                h.tvProfessor.setTextColor(corTextoSec);
+            }
+
+            int corMateria;
+            if (useTema) {
+                corMateria = theme.getCorMateria(a.getDisciplina(), a.getProfessor());
+            } else {
+                corMateria = DataHelper.getCorMateria(a.getDisciplina(), a.getProfessor());
+            }
+            int corFundo = (corMateria & 0x00FFFFFF) | 0xB3000000;
+            ((com.google.android.material.card.MaterialCardView) h.itemView).setCardBackgroundColor(corFundo);
+        }
+
+        h.itemView.setOnClickListener(v -> {
+            if (listener != null) listener.onClick(a, position);
+        });
+    }
+
+    @Override
+    public int getItemCount() { return aulas == null ? 0 : aulas.size(); }
+
+    static class HorarioViewHolder extends RecyclerView.ViewHolder {
+        TextView tvHorario, tvDisciplina, tvProfessor;
+        HorarioViewHolder(@NonNull View itemView) {
+            super(itemView);
+            tvHorario = itemView.findViewById(R.id.tv_horario);
+            tvDisciplina = itemView.findViewById(R.id.tv_disciplina);
+            tvProfessor = itemView.findViewById(R.id.tv_professor);
+        }
+    }
+}

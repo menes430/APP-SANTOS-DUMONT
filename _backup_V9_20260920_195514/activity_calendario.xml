@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_dark">
+    
+    <!-- CABEÇALHO COM MÊS NO CENTRO E BOTÃO DE ALARMES -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+        
+        <ImageView
+            android:id="@+id/btnVoltar"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_arrow_back"
+            android:tint="#FFFFFF"
+            android:contentDescription="Voltar" />
+            
+        <TextView
+            android:id="@+id/tv_mes_atual"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="SET."
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF" />
+
+        <ImageView
+            android:id="@+id/btnAlarmes"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/bg_input"
+            android:padding="6dp"
+            android:src="@drawable/ic_event"
+            android:tint="#FFD700"
+            android:contentDescription="Alarmes" />
+    </LinearLayout>
+    
+    <!-- CABEÇALHO DOS DIAS DA SEMANA -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="8dp">
+        <TextView android:text="D" android:textColor="#FF6B6B" android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textSize="14sp" />
+        <TextView android:text="S" android:textColor="#FFFFFF" android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textSize="14sp" />
+        <TextView android:text="T" android:textColor="#FFFFFF" android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textSize="14sp" />
+        <TextView android:text="Q" android:textColor="#FFFFFF" android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textSize="14sp" />
+        <TextView android:text="Q" android:textColor="#FFFFFF" android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textSize="14sp" />
+        <TextView android:text="S" android:textColor="#FFFFFF" android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textSize="14sp" />
+        <TextView android:text="S" android:textColor="#FF6B6B" android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textSize="14sp" />
+    </LinearLayout>
+    
+    <!-- GRADE DO CALENDÁRIO -->
+    <GridLayout
+        android:id="@+id/grid_calendario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="7"
+        android:rowCount="6"
+        android:padding="8dp"
+        android:paddingBottom="24dp" />
+        
+    <!-- LINHA DO DIA -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <TextView
+            android:id="@+id/tv_titulo_dia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 TER."
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF" />
+        <LinearLayout
+            android:id="@+id/ll_aulas_dia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="16dp" />
+    </LinearLayout>
+</LinearLayout>

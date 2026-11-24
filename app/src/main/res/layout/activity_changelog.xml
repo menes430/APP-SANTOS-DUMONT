@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark">
+
+    <!-- Titulo -->
+    <TextView
+        android:id="@+id/txtChangelogTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="24dp"
+        android:text="O que há de novo"
+        android:textColor="@color/text_primary"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtChangelogVersao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:text="Versão 16.1.0"
+        android:textColor="@color/primary"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/txtChangelogTitulo"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- ViewPager2 com as 3 categorias -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/changelogPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintTop_toBottomOf="@id/txtChangelogVersao"
+        app:layout_constraintBottom_toTopOf="@id/indicadoresContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- 3 quadrados indicadores -->
+    <LinearLayout
+        android:id="@+id/indicadoresContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/btnChangelogOk"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <View
+            android:id="@+id/quadradoIndicador0"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginHorizontal="4dp"
+            android:background="@drawable/bg_indicador" />
+
+        <View
+            android:id="@+id/quadradoIndicador1"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginHorizontal="4dp"
+            android:background="@drawable/bg_indicador" />
+
+        <View
+            android:id="@+id/quadradoIndicador2"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginHorizontal="4dp"
+            android:background="@drawable/bg_indicador" />
+    </LinearLayout>
+
+    <!-- Botao dinamico -->
+    <TextView
+        android:id="@+id/btnChangelogOk"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/bg_botao_arredondado"
+        android:gravity="center"
+        android:text="Continuar"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

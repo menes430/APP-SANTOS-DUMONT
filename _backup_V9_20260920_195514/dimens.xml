@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="spacer_1">4dp</dimen>
+    <dimen name="spacer_2">8dp</dimen>
+    <dimen name="spacer_3">16dp</dimen>
+    <dimen name="spacer_4">24dp</dimen>
+    <dimen name="radius_sm">4dp</dimen>
+    <dimen name="radius_md">8dp</dimen>
+    <dimen name="radius_lg">12dp</dimen>
+    <dimen name="radius_xl">16dp</dimen>
+    <dimen name="radius_xxl">20dp</dimen>
+    <dimen name="radius_xxxl">24dp</dimen>
+    <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="button_height">48dp</dimen>
+    <dimen name="input_height">48dp</dimen>
+</resources>

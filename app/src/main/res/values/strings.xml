@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ===== GERAL ===== -->
+    <string name="app_name">Santos Dumont</string>
+    <string name="app_version">1.0 BETA VERSION</string>
+    <string name="voltar">Voltar</string>
+    <string name="continuar">Continuar</string>
+    <string name="salvar">Salvar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="entendi">Entendi</string>
+    <string name="fechar">Fechar</string>
+    <string name="mapa">Mapa</string>
+    <string name="editar_perfil">Editar Perfil</string>
+    <string name="instagram">Instagram</string>
+
+    <!-- ===== LOGIN / BOAS VINDAS ===== -->
+    <string name="str_ol__">Olá,</string>
+    <string name="str_seu_nome">Seu Nome</string>
+    <string name="str_1__a___matutino">1ª Matutino</string>
+    <string name="str_santos_dumont">Santos Dumont</string>
+    <string name="str_app_escolar">APP ESCOLAR</string>
+    <string name="str_selecione_sua_turma">Selecione sua turma</string>
+    <string name="str_digite_seu_nome">Digite seu nome</string>
+    <string name="str_seu_nome_completo">Seu nome completo</string>
+    <string name="str_selecione_o_dia">Selecione o dia</string>
+
+    <!-- ===== HOME ===== -->
+    <string name="str_pr_xima_aula">Próxima aula</string>
+    <string name="str_proxima">Próxima aula</string>
+    <string name="str_agora">Agora</string>
+    <string name="str_08_00">08:00</string>
+    <string name="str_matem_tica">Matemática</string>
+    <string name="str_prof__joo">Prof. João</string>
+    <string name="str_prof__jo_o">Prof. João</string>
+    <string name="str_sala_05">Sala 05</string>
+    <string name="str_frequ_ncia">Frequência</string>
+    <string name="str_92_">92%</string>
+    <string name="str_sua_presen_a_est___tima_">Sua presença está ótima!</string>
+    <string name="str_continue_mantendo_sua_frequ_ncia_">Continue mantendo sua frequência.</string>
+    <string name="str_acesso_r_pido">Acesso rápido</string>
+    <string name="str_card_pio">Merenda</string>
+    <string name="str_veja_a_refei__o">Veja a refeição</string>
+    <string name="str_hor_rios">Horários</string>
+    <string name="str_confira_suas_aulas">Confira suas aulas</string>
+    <string name="str_trabalhos">Trabalhos</string>
+    <string name="str_n_o_esque_a">Não esqueça</string>
+    <string name="str_eventos_e_provas">Eventos e provas</string>
+    <string name="str_professores">Professores</string>
+    <string name="str_veja_seus_professores">Veja seus professores</string>
+    <string name="str_acompanhe_a_escola">Acompanhe a escola</string>
+    <string name="str_notas">Notas</string>
+    <string name="str_suas_m_dias">Suas médias</string>
+    <string name="str_in_cio">Início</string>
+
+    <!-- ===== NOTAS ===== -->
+    <string name="str_minhas_notas">Minhas Notas</string>
+    <string name="str____maior_nota">Maior nota</string>
+    <string name="str___pior_nota">Pior nota</string>
+    <string name="str_notas_por_mat_ria">Notas por matéria</string>
+    <string name="str_m_dia____">Média: --</string>
+    <string name="str_soma____">Soma: --</string>
+    <string name="str_professor">Professor</string>
+    <string name="str_5_turmas">5 turmas</string>
+    <string name="str_hor_rios_">Horários:</string>
+    <string name="str_9_6">9,6</string>
+    <string name="str_4_5">4,5</string>
+    <string name="str_hist_ria">História</string>
+    <string name="str_matem_tica__pdv">Matemática, PDV</string>
+    <string name="str_disciplinas__mat__pdv">Disciplinas: MAT, PDV</string>
+
+    <!-- ===== TRABALHOS ===== -->
+    <string name="str_novo_trabalho">Novo Trabalho</string>
+    <string name="str_meus_trabalhos">Meus Trabalhos</string>
+    <string name="str_nome_do_trabalho">Nome do trabalho</string>
+    <string name="str_data__dd_mm_aa_">Data (DD/MM/AA)</string>
+    <string name="str_data__dd_mm_aaaa_">Data (DD/MM/AAAA)</string>
+    <string name="str_hora__hh_mm_">Hora (HH:MM)</string>
+    <string name="str_descri_o_do_trabalho">Descrição do trabalho</string>
+    <string name="str_imagem_do_conte_do__opcional_">Imagem do conteúdo (opcional)</string>
+    <string name="str____salvar_trabalho">Salvar Trabalho</string>
+
+    <!-- ===== TRABALHOS v9 ===== -->
+    <string name="v9_novo_trabalho">Novo Trabalho</string>
+    <string name="v9_meus_trabalhos">Meus Trabalhos</string>
+    <string name="v9_nome_hint">Nome do trabalho</string>
+    <string name="v9_data_hint">Data (DD/MM/AA)</string>
+    <string name="v9_hora_hint">Hora (HH:MM)</string>
+    <string name="v9_descricao_hint">Descrição do trabalho</string>
+    <string name="v9_imagem_label">Imagem do conteúdo (opcional)</string>
+    <string name="v9_camera">Câmera</string>
+    <string name="v9_galeria">Galeria</string>
+    <string name="v9_salvar_trabalho">Salvar Trabalho</string>
+    <string name="v9_cancelar">Cancelar</string>
+    <string name="v9_programar_alarme">Programar alarme no app Relógio</string>
+    <string name="v9_notif_dia_sim_nao">Notificações dia sim/dia não</string>
+    <string name="v9_notif_ultima_semana">Notificações na última semana</string>
+    <string name="v9_notif_pos_alarme">Continuar notificando depois do alarme (3 dias)</string>
+    <string name="v9_btn_adicionar">Adicionar trabalho</string>
+    <string name="v9_nenhum_trabalho">Nenhum trabalho cadastrado. Toque no +</string>
+
+    <!-- ===== ALARMES ===== -->
+    <string name="str_alarmes_e_lembretes">Alarmes e Lembretes</string>
+    <string name="str_t_tulo__ex_studar_matem_tica_">Título (ex: Estudar Matemática)</string>
+    <string name="str_salvar_alarme">Salvar Alarme</string>
+    <string name="str_meus_alarmes">Meus Alarmes</string>
+    <string name="str_trabalho">Trabalho</string>
+    <string name="str_faltam_x_dias">Faltam X dias</string>
+    <string name="str_t_tulo__ex__estudar_matem_tica_">Título (ex: Estudar Matemática)</string>
+
+    <!-- ===== INSTAGRAM ===== -->
+    <string name="str____siga_a_escola_">Siga a escola!</string>
+    <string name="str_instagram">Instagram</string>
+
+    <!-- ===== MAPA ===== -->
+    <string name="str____mapa_em_constru__o">Mapa em construção</string>
+    <string name="str_____mapa_em_constru__o">Mapa em construção</string>
+    <string name="str_envie_a_imagem_ou_descreva_as_salas_da_escola_para_eu_montar_o_mapa_aqui_">Envie a imagem ou descreva as salas da escola.</string>
+
+    <!-- ===== AULAS / HORÁRIOS ===== -->
+    <string name="str_aulas_encerradas">Aulas encerradas</string>
+    <string name="str_aula_encerrada_">Aulas encerradas</string>
+    <string name="str_bom_descanso">Bom descanso!</string>
+    <string name="str_sem_aulas_hoje">Sem aulas hoje</string>
+    <string name="str_proxima_aula_">Próxima aula</string>
+    <string name="str_prox_aula_">Próxima aula</string>
+    <string name="str_prof__c_cera">Prof. Cícera</string>
+    <string name="str_art">ART</string>
+    <string name="str_7h">7h</string>
+
+    <!-- ===== DATE PICKER ===== -->
+    <string name="appbar_scrolling_view_behavior" translatable="false">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="dp_mes_anterior">Mês anterior</string>
+    <string name="dp_mes_proximo">Próximo mês</string>
+    <string name="dp_escolha_ano">Escolha o ano</string>
+    <string name="dp_cancelar">Cancelar</string>
+
+    <!-- ===== CALENDÁRIO ===== -->
+    <string name="str_set_">SET.</string>
+    <string name="str_d">D</string>
+    <string name="str_s">S</string>
+    <string name="str_t">T</string>
+    <string name="str_q">Q</string>
+    <string name="str_1_ter_">1 TER.</string>
+    <string name="str_1_">1ª</string>
+    <string name="str_2_">2ª</string>
+    <string name="str_3_">3ª</string>
+    <string name="str_4_">4ª</string>
+    <string name="str_segunda">Segunda</string>
+
+    <!-- ===== CARDÁPIO ===== -->
+    <string name="str_1__semana">1ª Semana</string>
+    <string name="str_cuscuz">CUSCUZ</string>
+    <string name="str_kcal">Kcal</string>
+    <string name="str_prot_">Prot.</string>
+    <string name="str_lip_">Lip.</string>
+    <string name="str_carb_">Carb.</string>
+    <string name="str_s_dio">Sódio</string>
+    <string name="str_230">230</string>
+    <string name="str_9">9</string>
+    <string name="str_6">6</string>
+    <string name="str_34">34</string>
+    <string name="str_148">148</string>
+
+    <!-- ===== SECAO EM BREVE ===== -->
+    <string name="em_breve_titulo">Em breve</string>
+    <string name="em_breve_subtitulo">Futuras funcionalidades</string>
+    <string name="ideia_mapa">Mapa da Escola</string>
+    <string name="ideia_mapa_desc">Salas e locais</string>
+    <string name="ideia_sons">Sons</string>
+    <string name="ideia_sons_desc">Sons das notificações</string>
+    <string name="ideia_creditos">Créditos</string>
+    <string name="ideia_creditos_desc">Créditos do app</string>
+    <string name="ideia_eventos">Eventos</string>
+    <string name="ideia_eventos_desc">Eventos predefinidos</string>
+    <string name="ideia_bio_prof">Bio Professores</string>
+    <string name="ideia_bio_prof_desc">Biografia estudantil</string>
+    <string name="ideia_quadrinho">Quadrinho</string>
+    <string name="ideia_quadrinho_desc">História do Santos Dumont</string>
+    <string name="ideia_prova">Prova</string>
+    <string name="ideia_prova_desc">Assunto de prova em data</string>
+    <string name="ideia_marcacoes">Marcações</string>
+    <string name="ideia_marcacoes_desc">Dias + notas</string>
+    <string name="ideia_bluetooth">Bluetooth</string>
+    <string name="ideia_bluetooth_desc">Mensagens via Bluetooth</string>
+    <string name="ideia_materiais">Materiais</string>
+    <string name="ideia_materiais_desc">Vídeos e PDFs</string>
+    <string name="ideia_sync">Sync Online</string>
+    <string name="ideia_sync_desc">Atualizar via internet</string>
+    <!-- ===== CHANGELOG ===== -->
+    <string name="changelog_titulo">O que ha de novo</string>
+    <string name="changelog_botao">Entendi!</string>
+    <string name="turno_titulo">Em qual turno você estuda?</string>
+    <string name="turno_manha">Manhã</string>
+    <string name="turno_tarde">Tarde</string>
+    <!-- ===== HORARIOS: affordance de edicao ===== -->
+    <string name="dica_editar_aula">Toque para editar esta aula</string>
+    <string name="notif_presenca_titulo">Você esteve presente na aula?</string>
+    <string name="notif_presenca_corpo">Toque para confirmar presença ou avisar que o professor faltou.</string>
+    <string name="notif_presenca_sim">Sim</string>
+    <string name="notif_presenca_nao">Não</string>
+    <string name="notif_intervalo">Bom intervalo!</string>
+    <string name="notif_intervalo_corpo">Aproveite o intervalo. Aulas retornam às 10:10.</string>
+    <string name="notif_despedida">Até amanhã!</string>
+    <string name="notif_despedida_corpo">Bom descanso. Suas aulas de hoje terminaram.</string>
+    <string name="notif_presenca_professor">Prof. faltou</string>
+    <string name="notif_escola_titulo">Você foi para a escola?</string>
+    <string name="notif_escola_sim">Sim</string>
+    <string name="notif_escola_nao">Não</string>
+    <string name="consentimento_titulo">Coleta de dados</string>
+    <string name="consentimento_aceito">Li e concordo com a coleta de dados</string>
+    <string name="consentimento_saiba_mais">Saiba mais</string>
+    <string name="consentimento_texto">Para melhorar o app e corrigir problemas, o Santos Dumont coleta alguns dados. Veja abaixo o que e coletado e por que:\n\n- Seu nome e turma — para personalizar o app (mostrar suas aulas, sua merenda) e evitar que duas pessoas usem o mesmo nome.\n- Modelo e fabricante do aparelho, versao do Android e versao do app — para identificar problemas que acontecem so em certos celulares e corrigir mais rapido.\n- Eventos de uso (quais telas voce abriu, quando, por quanto tempo) — para entender quais funcoes sao mais usadas e quais dao erro.\n\nEsses dados sao enviados para o Firebase (Google) e nao incluem senha, localizacao, contatos, fotos ou e-mail. O envio e feito com um hash do dispositivo (nao o ID real).\n\nSe voce discordar, o app continua funcionando normalmente, mas nao enviara dados. Isso pode dificultar a procura de erros e a correcao de problemas, porque nao teremos informacao de como o app se comporta no seu aparelho.</string>
+    <string name="consentimento_recusar">Agora nao</string>
+</resources>

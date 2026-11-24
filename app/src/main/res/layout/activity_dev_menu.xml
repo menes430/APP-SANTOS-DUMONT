@@ -1,0 +1,840 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A1A1A"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="&#x1F6E0; MODO DESENVOLVEDOR"
+            android:textColor="#00FF88"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Ferramentas de teste do app"
+            android:textColor="#888888"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txtDevInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#222222"
+            android:padding="14dp"
+            android:textColor="#CCCCCC"
+            android:textSize="13sp"
+            android:fontFamily="monospace"
+            android:text="Carregando..." />
+
+        <!-- ============================================================ -->
+        <!-- PASTA 1: TELAS (ABERTA) -->
+        <!-- ============================================================ -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#2A2A2A"
+            android:orientation="horizontal"
+            android:padding="14dp"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/headerTelas">
+
+            <TextView
+                android:id="@+id/arrowTelas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="&#x25BC;"
+                android:textColor="#00FF88"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginEnd="12dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="&#x1F3AD; TELAS"
+                android:textColor="#00FF88"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/containerTelas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/btnDevPresenca"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="8dp"
+                android:background="#1E3A5F"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:text="&#x1F4CB; Forcar dialog de presen&#xE7;a"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/btnDevForcarPresencaPosLoad"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="8dp"
+                android:background="#1E3A5F"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:text="Forcar presenca pos-load (1x/dia)"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/btnDevNotifPresenca"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="8dp"
+                android:background="#1E3A5F"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:text="Testar notificacao de presenca"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/btnDevNotifIntervalo"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="8dp"
+                android:background="#2D4A2D"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:text="Testar notificacao de intervalo"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/btnDevNotifDespedida"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="8dp"
+                android:background="#4A2D4A"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:text="Testar notificacao de despedida"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/btnDevBloqueio"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="8dp"
+                android:background="#5F1E1E"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:text="&#x1F6AB; Forcar bloqueio (tela preta)"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/btnDevTutorial"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="8dp"
+                android:background="#1E3A5F"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:text="&#x1F393; Forcar tutorial"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/btnDevChangelog"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="8dp"
+                android:background="#1E3A5F"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:text="&#x1F4F0; Forcar changelog"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:clickable="true"
+                android:focusable="true" />
+        
+
+            <!-- RODAPE: VERSAO DO APP -->
+            <TextView
+                android:id="@+id/txtDevVersaoFooter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:textColor="#666666"
+                android:textSize="12sp"
+                android:text="App Santos Dumont v..." />
+
+        </LinearLayout>
+
+        <!-- ============================================================ -->
+        <!-- PASTA 2: NOTIFICACOES (FECHADA) -->
+        <!-- ============================================================ -->
+        <LinearLayout
+            android:id="@+id/headerNotif"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="#2A2A2A"
+            android:orientation="horizontal"
+            android:padding="14dp"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:id="@+id/arrowNotif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="&#x25B6;"
+                android:textColor="#00FF88"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginEnd="12dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="&#x1F514; NOTIFICA&#xC7;&#xD5;ES"
+                android:textColor="#00FF88"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/containerNotif"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/btnDevTestarTodas"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="8dp"
+                android:background="#00AA55"
+                android:gravity="center"
+                android:paddingStart="16dp"
+                android:text="&#x1F514; TESTAR TODAS AS NOTIFICA&#xC7;&#xD5;ES"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/btnDevTestarBoasVindas"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="8dp"
+                android:background="#1E3A5F"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:text="&#x1F389; Testar boas-vindas"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/btnDevTestarAulaVaga"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="8dp"
+                android:background="#1E3A5F"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:text="&#x23F0; Testar aula vaga"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/btnDevTestarLembrete"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="8dp"
+                android:background="#1E3A5F"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:text="&#x1F4CC; Testar lembrete persistente"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/btnDevIniciarServico"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="8dp"
+                android:background="#1E3A5F"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:text="&#x25B6; Iniciar servico"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/btnDevPararServico"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="8dp"
+                android:background="#5F1E1E"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:text="&#x23F9; Parar servico"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/btnDevAgendarAlarmes"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="8dp"
+                android:background="#2D4A2D"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:text="&#x1F4C5; Agendar alarmes agora"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/btnDevCancelarAlarmes"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="8dp"
+                android:background="#5F4A1E"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:text="&#x274C; Cancelar todos os alarmes"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/btnDevSimularIniciar"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="8dp"
+                android:background="#1E3A5F"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:text="&#x25B6; Simular INICIAR servico"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/btnDevSimularParar"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="8dp"
+                android:background="#1E3A5F"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:text="&#x23F9; Simular PARAR servico"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/btnDevSimularBoot"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="8dp"
+                android:background="#1E3A5F"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:text="&#x1F501; Simular reboot"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/btnDevResetNotif"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="8dp"
+                android:background="#5F4A1E"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:text="&#x1F514; Resetar flags de notificacao"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:clickable="true"
+                android:focusable="true" />
+        </LinearLayout>
+
+        <!-- ============================================================ -->
+        <!-- PASTA 3: FIREBASE (FECHADA) -->
+        <!-- ============================================================ -->
+        <LinearLayout
+            android:id="@+id/headerFirebase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="#2A2A2A"
+            android:orientation="horizontal"
+            android:padding="14dp"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:id="@+id/arrowFirebase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="&#x25B6;"
+                android:textColor="#00FF88"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginEnd="12dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="&#x1F525; FIREBASE"
+                android:textColor="#00FF88"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/containerFirebase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/btnDevEnviarFirebase"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="8dp"
+                android:background="#FF6B00"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:text="&#x2601; Enviar pro Firebase agora"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/btnDevSimularEnvio"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="8dp"
+                android:background="#FF6B00"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:text="&#x1F4E4; Forcar envio pro Firebase"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:focusable="true" />
+        </LinearLayout>
+
+        <!-- ============================================================ -->
+        <!-- PASTA 4: DADOS (FECHADA) -->
+        <!-- ============================================================ -->
+        <LinearLayout
+            android:id="@+id/headerDados"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="#2A2A2A"
+            android:orientation="horizontal"
+            android:padding="14dp"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:id="@+id/arrowDados"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="&#x25B6;"
+                android:textColor="#00FF88"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginEnd="12dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="&#x1F527; DADOS"
+                android:textColor="#00FF88"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/containerDados"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/btnDevVerDados"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="8dp"
+                android:background="#1E3A5F"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:text="&#x1F4CA; Ver dados coletados"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/btnDevLimparColeta"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="8dp"
+                android:background="#5F4A1E"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:text="&#x1F5D1; Limpar dados coletados"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/btnDevLimparDados"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="8dp"
+                android:background="#5F1E1E"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:text="&#x1F5D1; Limpar TODOS os dados (SharedPreferences)"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/btnDevLogs"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="8dp"
+                android:background="#333333"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:text="&#x1F4C4; Ver logs de erro"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/btnDevResetSaidas"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="8dp"
+                android:background="#5F4A1E"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:text="&#x1F504; Resetar contador de saidas"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:clickable="true"
+                android:focusable="true" />
+        </LinearLayout>
+
+        <!-- ============================================================ -->
+        <!-- PASTA 5: CONFIG (FECHADA) -->
+        <!-- ============================================================ -->
+        <LinearLayout
+            android:id="@+id/headerConfig"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="#2A2A2A"
+            android:orientation="horizontal"
+            android:padding="14dp"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:id="@+id/arrowConfig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="&#x25B6;"
+                android:textColor="#00FF88"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginEnd="12dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="&#x2699; CONFIG"
+                android:textColor="#00FF88"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/containerConfig"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/btnDevToggleTeste"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="8dp"
+                android:background="#2D4A2D"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:text="&#x1F527; Toggle Modo Teste"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/txtDevToggleTeste"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:paddingStart="16dp"
+                android:text="Modo Teste: DESLIGADO"
+                android:textColor="#88FF88"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/btnDevVerFlags"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="8dp"
+                android:background="#333333"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:text="&#x1F441; Ver todas as flags"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:clickable="true"
+                android:focusable="true" />
+        </LinearLayout>
+
+        <!-- ============================================================ -->
+        <!-- SAIR -->
+        <!-- ============================================================ -->
+        <TextView
+            android:id="@+id/btnDevSair"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="24dp"
+            android:background="#00AA55"
+            android:gravity="center"
+            android:paddingStart="16dp"
+            android:text="&#x2714; Sair do Modo Dev e ir pra Home"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:focusable="true" />
+
+    
+        <!-- ============================================================ -->
+        <!-- PASTA 6: AVISOS 1a ABERTURA -->
+        <!-- ============================================================ -->
+        <LinearLayout
+            android:id="@+id/headerAvisos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="#2A2A2A"
+            android:orientation="horizontal"
+            android:padding="14dp"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:id="@+id/arrowAvisos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="&#x25B6;"
+                android:textColor="#00FF88"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginEnd="12dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="&#x1F514; AVISOS 1a ABERTURA"
+                android:textColor="#00FF88"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/containerAvisos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/btnDevForcarAvisoCardapio"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="8dp"
+                android:background="#3A2A1E"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:text="&#x1F37D; Forcar aviso do Merenda"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/btnDevForcarAvisoFrequencia"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="8dp"
+                android:background="#1E2A3A"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:text="&#x1F4CB; Forcar aviso da Frequencia"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:clickable="true"
+                android:focusable="true" />
+        </LinearLayout>
+
+        <!-- ============================================================ -->
+        <!-- PASTA 7: VERSAO -->
+        <!-- ============================================================ -->
+        <LinearLayout
+            android:id="@+id/headerVersao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="#2A2A2A"
+            android:orientation="horizontal"
+            android:padding="14dp"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:id="@+id/arrowVersao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="&#x25B6;"
+                android:textColor="#00FF88"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginEnd="12dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="&#x2139; VERSAO"
+                android:textColor="#00FF88"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/containerVersao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/btnDevMostrarVersao"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="8dp"
+                android:background="#2D4A2D"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:text="&#x1F4F1; Mostrar versao atual"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:clickable="true"
+                android:focusable="true" />
+        </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>

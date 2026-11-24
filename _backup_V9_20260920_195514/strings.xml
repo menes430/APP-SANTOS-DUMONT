@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Santos Dumont</string>
+    <string name="app_version">1.0</string>
+    <string name="bem_vindo">Bem-vindo(a) ao Santos Dumont</string>
+    <string name="selecione_turma">Selecione sua turma</string>
+    <string name="digite_nome">Digite seu nome</string>
+    <string name="continuar">Continuar</string>
+    <string name="ola">Olá,</string>
+    <string name="cardapio">CARDÁPIO EJA</string>
+    <string name="horarios">HORÁRIOS</string>
+    <string name="professores">PROFESSORES</string>
+    <string name="editar_perfil">Editar Perfil</string>
+    <string name="trabalhos">TRABALHOS</string>
+    <string name="mapa">MAPA DA ESCOLA</string>
+    <string name="notas">NOTAS</string>
+    <string name="calendario">CALENDÁRIO</string>
+    <string name="creditos">CRÉDITOS</string>
+    <string name="instagram">INSTAGRAM</string>
+    <string name="eventos">EVENTOS</string>
+    <string name="biografia">BIOGRAFIA DOS PROFESSORES</string>
+    <string name="historia">HISTÓRIA EM QUADRINHOS</string>
+    <string name="tarde">TURNO DA TARDE</string>
+    <string name="trabalhos_add">Adicionar Trabalho</string>
+    <string name="data">Data:</string>
+    <string name="materia">Matéria:</string>
+</resources>

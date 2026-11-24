@@ -1,0 +1,209 @@
+============================================================
+ DIAGNÓSTICO PARTE 3 — 20/10/2026 15:57
+============================================================
+PWD: /home/convidado/Área de trabalho/AppSantosDumontFinal
+
+== [1] ESTRUTURA RAIZ ==
+app
+_backup_6erros_20260924_180342
+_backup_antes_restaurar_20260924_172442
+_backup_aspas_20260924_175005
+_backup_botoes_20260922_171255
+_backup_cal_20260920_204019
+_backup_camera_20260922_160113
+_backup_campos_20260924_172255
+_backup_cam_ui_20260922_163140
+_backup_enc_20260922_184051
+_backup_fix2_20260920_203017
+_backup_fixdiag_20260924_172931
+_backup_fixv96_20260922_174018
+_backup_flags_20260924_173038
+_backup_hor_20260922_182250
+_backup_horarios_20260920_203817
+_backup_hsaida_20260922_180352
+_backup_icone_20260922_155821
+_backup_lintfix_20260924_173929
+_backup_loading_20260924_194438
+_backup_manifest_20260922_164239
+_backup_reset_20260920_203636
+_backups_internos
+_backup_tint_20260924_174005
+_backup_trab_20260920_194751
+_backup_trab_20260922_183623
+_backup_V8_20260920_194304
+_backup_V9_20260920_195514
+_backup_V9.2_20260920_200805
+_backup_V9.4_20260920_202737
+
+== [2] GRADLE / VERSÃO ==
+17:    compileSdk 34
+21:        minSdk 24
+22:        targetSdk 34
+23:        versionCode 200000
+24:        versionName "2.0.0"
+
+== [3] JAVA SOURCES (contagem por pasta) ==
+Total .java: 63
+-- por diretório --
+      1 app/src/main/java/com/santosdumont
+     12 app/src/main/java/com/santosdumont/activities
+      7 app/src/main/java/com/santosdumont/adapters
+     11 app/src/main/java/com/santosdumont/fragments
+      8 app/src/main/java/com/santosdumont/models
+     24 app/src/main/java/com/santosdumont/utils
+
+== [4] FRAGMENTS ==
+AlarmesFragment.java
+CalendarioFragment.java
+CardapioFragment.java
+FrequenciaFragment.java
+HomeFragment.java
+HorariosFragment.java
+InstagramFragment.java
+MapaFragment.java
+NotasFragment.java
+ProfessoresFragment.java
+TrabalhosFragment.java
+
+== [5] ACTIVITIES ==
+AlarmeTelaActivity.java
+BloqueioActivity.java
+BoasVindasActivity.java
+ChangelogActivity.java
+DevMenuActivity.java
+DialogPresencaActivity.java
+ImageViewActivity.java
+LembreteActivity.java
+LoadingActivity.java
+ShellActivity.java
+TurnoActivity.java
+TutorialActivity.java
+
+== [6] SERVICES / RECEIVERS ==
+AulaAlarmReceiver.java
+AulaForegroundService.java
+AulaVagaReceiver.java
+BootReceiver.java
+NotificationReceiver.java
+
+== [7] ARQUIVOS-CHAVE PARA PARTE 3 ==
+FALTA app/src/main/java/com/santosdumont/ThemeEditorActivity.java           
+FALTA app/src/main/java/com/santosdumont/ThemeEditorFragment.java           
+FALTA app/src/main/java/com/santosdumont/DevMenuActivity.java               
+FALTA app/src/main/java/com/santosdumont/HomeFragment.java                  
+FALTA app/src/main/java/com/santosdumont/FrequenciaFragment.java            
+FALTA app/src/main/java/com/santosdumont/CardapioFragment.java              
+FALTA app/src/main/java/com/santosdumont/TutorialActivity.java              
+FALTA app/src/main/java/com/santosdumont/ChangelogActivity.java             
+
+== [8] LAYOUTS XML ==
+activity_alarmes.xml
+activity_alarme_tela.xml
+activity_bloqueio.xml
+activity_boas_vindas.xml
+activity_calendario.xml
+activity_cardapio.xml
+activity_changelog.xml
+activity_dev_menu.xml
+activity_horarios.xml
+activity_image_view.xml
+activity_instagram.xml
+activity_lembrete.xml
+activity_loading.xml
+activity_main.xml
+activity_mapa.xml
+activity_notas.xml
+activity_professores.xml
+activity_shell.xml
+activity_trabalhos.xml
+activity_turno.xml
+activity_tutorial.xml
+bottom_nav.xml
+dialog_ano_picker.xml
+dialog_date_picker.xml
+dialog_grade_anos.xml
+dialog_grade_meses.xml
+dialog_novo_trabalho.xml
+dialog_professor_horarios.xml
+dialog_ver_trabalho.xml
+drawer_menu_perfil.xml
+fragment_alarmes.xml
+fragment_calendario.xml
+fragment_cardapio.xml
+fragment_frequencia.xml
+fragment_home.xml
+fragment_horarios.xml
+fragment_instagram.xml
+fragment_mapa.xml
+fragment_notas.xml
+fragment_professores.xml
+fragment_trabalhos.xml
+item_aula_frequencia.xml
+item_cardapio.xml
+item_card_home.xml
+item_changelog_card.xml
+item_changelog_item.xml
+item_frequencia.xml
+item_horario.xml
+item_ideia.xml
+item_nota.xml
+item_professor.xml
+item_tutorial_passo.xml
+pagina_cardapio_semana.xml
+spinner_item_dia.xml
+top_status_bar.xml
+Total layouts: 55
+
+== [9] PREFERÊNCIAS / PREFS (temas, fontes, rollback) ==
+app/src/main/java/com/santosdumont/activities/TurnoActivity.java:4:import android.content.SharedPreferences;
+app/src/main/java/com/santosdumont/activities/TurnoActivity.java:20:        SharedPreferences prefs = getSharedPreferences("app_prefs", MODE_PRIVATE);
+app/src/main/java/com/santosdumont/activities/BoasVindasActivity.java:5:import android.content.SharedPreferences;
+app/src/main/java/com/santosdumont/activities/BoasVindasActivity.java:32:    private SharedPreferences prefs;
+app/src/main/java/com/santosdumont/activities/BoasVindasActivity.java:44:        SharedPreferences p = getSharedPreferences("app_prefs", Context.MODE_PRIVATE);
+app/src/main/java/com/santosdumont/activities/BoasVindasActivity.java:50:        prefs = getSharedPreferences("app_prefs", Context.MODE_PRIVATE);
+app/src/main/java/com/santosdumont/activities/BoasVindasActivity.java:121:        SharedPreferences.Editor editor = prefs.edit();
+app/src/main/java/com/santosdumont/activities/BoasVindasActivity.java:178:        SharedPreferences p = getSharedPreferences("app_prefs", MODE_PRIVATE);
+app/src/main/java/com/santosdumont/activities/BoasVindasActivity.java.bak_antes_voltar_popup:5:import android.content.SharedPreferences;
+app/src/main/java/com/santosdumont/activities/BoasVindasActivity.java.bak_antes_voltar_popup:31:    private SharedPreferences prefs;
+app/src/main/java/com/santosdumont/activities/BoasVindasActivity.java.bak_antes_voltar_popup:42:        SharedPreferences p = getSharedPreferences("app_prefs", Context.MODE_PRIVATE);
+app/src/main/java/com/santosdumont/activities/BoasVindasActivity.java.bak_antes_voltar_popup:48:        prefs = getSharedPreferences("app_prefs", Context.MODE_PRIVATE);
+app/src/main/java/com/santosdumont/activities/BoasVindasActivity.java.bak_antes_voltar_popup:120:        SharedPreferences.Editor editor = prefs.edit();
+app/src/main/java/com/santosdumont/activities/BoasVindasActivity.java.bak_antes_voltar_popup:153:        SharedPreferences p = getSharedPreferences("app_prefs", MODE_PRIVATE);
+app/src/main/java/com/santosdumont/activities/BloqueioActivity.java:9:import android.content.SharedPreferences;
+app/src/main/java/com/santosdumont/activities/BloqueioActivity.java:69:            SharedPreferences prefs = getSharedPreferences("app_prefs", MODE_PRIVATE);
+app/src/main/java/com/santosdumont/activities/DialogPresencaActivity.java:4:import android.content.SharedPreferences;
+app/src/main/java/com/santosdumont/activities/DialogPresencaActivity.java:18:        SharedPreferences prefs = getSharedPreferences("app_prefs", MODE_PRIVATE);
+app/src/main/java/com/santosdumont/activities/TutorialActivity.java:4:import android.content.SharedPreferences;
+app/src/main/java/com/santosdumont/activities/TutorialActivity.java:81:        SharedPreferences prefs = getSharedPreferences("app_prefs", MODE_PRIVATE);
+
+== [10] FLAGS DE TEMA (M11 rollback) ==
+app/src/main/java/com/santosdumont/utils/ThemePrefs.java:18:    private static final String KEY_FUNDO_LITERAL = "theme_fundo_literal";
+
+== [11] INDICADORES CHANGELOG (E7) ==
+
+== [12] NOTIFICAÇÕES (M13, F1, F6) ==
+AlarmesFragment.java
+AlarmeTelaActivity.java
+AulaAlarmReceiver.java
+AulaVagaReceiver.java
+NotificationHelper.java
+NotificationReceiver.java
+NotificationScheduler.java
+TrabalhoAlarmeHelper.java
+
+== [13] RESOURCES DE TEMA ==
+OK app/src/main/res/values/themes.xml (41 linhas)
+OK app/src/main/res/values/colors.xml (23 linhas)
+FALTA app/src/main/res/values/styles.xml
+
+== [14] BACKUP DEV_MENU (R56) ==
+Existe app/_bak_devmenu (140 arquivos)
+
+== [15] FIREBASE / DADOS_USO ==
+app/src/main/java/com/santosdumont/activities/DevMenuActivity.java:136:            String header = "Arquivo: dados_uso.txt\n" +
+app/src/main/java/com/santosdumont/activities/DevMenuActivity.java:153:                    .setMessage("Isso apaga o arquivo dados_uso.txt.")
+app/src/main/java/com/santosdumont/activities/DevMenuActivity.java.bak_antes_v9:127:            String header = "Arquivo: dados_uso.txt\n" +
+app/src/main/java/com/santosdumont/activities/DevMenuActivity.java.bak_antes_v9:144:                    .setMessage("Isso apaga o arquivo dados_uso.txt.")
+app/src/main/java/com/santosdumont/utils/FirebaseUploader.java.bak_antes_v10e4:115:                    .collection("dados_uso")
+
+== [16] FIM DO DIAGNÓSTICO ==
